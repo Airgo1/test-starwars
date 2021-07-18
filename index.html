@@ -4,15 +4,15 @@
 		<meta charset ="utf-8">
 		<title>Star Wars</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 		<script type="text/javascript" src="assets/js/script.js"></script>
-		<script type="text/javascript" src="assets/js/parallax.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-		<header id="header" class="section bk-logo">
+		<header id="header" class="section bg bk-logo" data-type="background" data-speed="1">
 			<div class="menu">
 				<nav class="nav dropdown">
-						<button onclick="Close()" class="dropbtn menu-close"><img class="icon-close" src="assets/img/close.png" alt="icon-close"></button>
+						<button onclick="Close()" class="dropbtn menu-close"><img class="icon-close svg-white" src="assets/img/close.png" alt="icon-close"></button>
 						<ul class="topnav dropdown-content" id="myDropdown">
 						  <li><a class="active" href="#">LE COTÉ LUMINEUX</a></li>
 						  <li><a href="#">LE COTÉ OBSCUR</a></li>
@@ -21,10 +21,10 @@
 						  <li><a href="#">LES EWOKS</a></li>
 						  <li><a href="#">JABBA LE HUTT</a></li>
 					  	</ul>
-					  	<button onclick="Open()" class="dropbtn menu-open"><img class="icon-close" src="assets/img/menu.png" alt="icon-close"></button>
+					  	<button onclick="Open()" class="dropbtn menu-open"><img class="icon-close svg-white" src="assets/img/menu.png" alt="icon-close"></button>
 				</nav>
 			</div>
-			<div id="logo" class="section logo"></div>
+			<div id="logo" class="section logo" data-type="background" data-speed="2"></div>
 		</header>
 
 		<article id="article1">
@@ -43,7 +43,7 @@
 			<div class="float-none"></div>
 		</article>
 
-		<div id="kiloren" class="section kilo"></div>
+		<div id="kiloren" class="section kilo" data-type="background" data-speed="1"></div>
 
 		<article id="robot">
 			<h2>A long time ago, in a galaxy far, far away…</h2>
@@ -86,9 +86,9 @@
 					<p>FOLLOW STAR WARS</p>
 					<div class="icons">
 						<ul>
-							<li><img id="FB" src="assets/img/icon_facebook.png" alt="Logo Facebook"></li>
-							<li><img id="Twitter" src="assets/img/icon_twitter.png" alt="Logo Twitter"></li>
-							<li><img id="Instagram" src="assets/img/icon_instagram.png" alt="Logo Instagram"></li>
+							<li><img id="FB" class="svg-white" src="assets/img/icon_facebook.svg" alt="Logo Facebook"></li>
+							<li><img id="Twitter" class="svg-white" src="assets/img/icon_twitter.svg" alt="Logo Twitter"></li>
+							<li><img id="Instagram" class="svg-white" src="assets/img/icon_instagram.png" alt="Logo Instagram"></li>
 						</ul>
 					</div>
 				</div>

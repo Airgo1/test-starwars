@@ -41,23 +41,40 @@ $( document ).ready(function() {
 			
 	}
 
-	function Parallax(id, velocity) {
-		var element = document.getElementById(id);
-		var wpos = window.pageYOffset;
-		var headerHeight = element.offsetHeight;
+	function Parallax(id) {
+		console.log("paralax");
+		var el = document.getElementById(id);
 
-		if (wpos <= headerHeight)
-		element.style.bottom = (wpos * velocity) + 'px';
+		var window_pos = window.pageYOffset;
+		var el_top = el.offsetTop;
+		var el_height = el.offsetHeight;
+		var el_bottom = el_top+el_height;
+		var pos_el_string = el.style.backgroundPositionY;
+		var pos_el_int = parseInt(pos_el_string.slice(2,pos_el_string.length-2));
+		var move_backgroung = /*pos_el_int +*/ ((window_pos-el_top)*el.dataset.speed);
+		
+		console.log(pos_el_string)
+		console.log(pos_el_int)
+
+		if(window_pos > el_top && window_pos < el_bottom) {
+			console.log(id + " : " + move_backgroung + " : " + el_height);
+			el.style.backgroundPositionY = '-' + (move_backgroung) + 'px';
+		}
 	}
-
+	
 	Publicity()
 
 	window.addEventListener("scroll", Publicity);
 	window.addEventListener("scroll", function(){
-		Parallax("logo",1.1);
+		Parallax("header");
+	});
+	window.addEventListener("scroll", function(){
+		Parallax("logo");
+	});
+	window.addEventListener("scroll", function(){
+		Parallax("kiloren");
 	});
 
-	
 });
 
 

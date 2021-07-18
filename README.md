@@ -13,4 +13,3 @@ L'objectif de ce test est :
 Le test a été effectué le vendredi 16 juillet 2021 et a duré 12 heures (9 heures de dev le vendredi et 3 heures de fix/relecture le dimanche).
 
 Le développement a été effectué sur les navigateurs firefox, microsoft edge, internet explorer et chrome.
-
