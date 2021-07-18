@@ -56,6 +56,8 @@ $( document ).ready(function() {
 	window.addEventListener("scroll", function(){
 		Parallax("logo",1.1);
 	});
+
+	
 });
 
 
