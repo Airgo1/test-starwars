@@ -14,3 +14,5 @@ Le test a été effectué le vendredi 16 juillet 2021 et a duré 12 heures (9 he
 
 Le développement a été effectué sur les navigateurs firefox, microsoft edge, internet explorer et chrome.
 
+Il y a une petite erreur sur le parralax quand le background est centré. Pour fix  cette erreur, il faudrait lors de la function récupéré la position Y du Background afin de ne plus avoir le décallage présent.
+
